@@ -1,0 +1,10 @@
+# Note example of "same page delayed resolution" using jvarler syntax `${...}`.
+# Here we can reference a value in the same context it becomes available in.
+sample:
+  id: "007"
+  paths:
+    # Note, we're resolving a value one level up using relative syntax.
+    src: samples/${../id}
+    dest: ${src}/generated
+
+a: a

@@ -1,0 +1,12 @@
+# Any variable in this file is resolved using `vars.yaml`.
+
+# We remove any generated files.
+- shell: rm -rf {{sample.paths.dest}}
+
+# Load template from `source` and resolve to `destination`.
+{% for i in range(n) %}
+- source: {{sample.paths.src}}/template.yml
+  destination: {{sample.paths.dest}}/resolved-{{i}}.yml
+  variables:
+    i: {{i}}
+{% endfor %}

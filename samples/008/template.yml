@@ -1,0 +1,4 @@
+# Comes from `vars.yaml`.
+# Notable we're referencing value `a` that should be
+# resolved delayed as per page[1].
+a: {{a}}

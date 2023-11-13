@@ -1,0 +1,2 @@
+# Comes from `vars.yaml`.
+a: {{a}}

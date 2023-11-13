@@ -1,0 +1,9 @@
+# We'll be using these paths in `destinations.yaml`.
+sample:
+  id: "001"
+  paths:
+    src: samples/001
+    dest: samples/001/generated
+
+# Some value to write to our template.
+a: 1
